@@ -10,7 +10,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class ServiceReservation implements IServiceReservation<Reservation> {
+public class ServiceReservation implements IService<Reservation> {
     private Connection connection= DataSource.getInstance().getCon();
     private Statement statement;
     public ServiceReservation(){
